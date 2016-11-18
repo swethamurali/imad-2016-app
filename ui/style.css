@@ -1,12 +1,16 @@
 body {
  font-family: verdana;
- opacity:0.6;
     background-color: maroon;
     
     color:white;
     margin-top: 35px;
     font-size: 20px;
 
+}
+#wrapper
+{
+    background-color: "#154848";
+    opacity:0.6;
 }
 
 .center {
