@@ -10,8 +10,23 @@ app.get('/', function (req, res) {
   
 });
 
+app.get('/home', function (req, res) {
+  res.sendFile('this is my home');
+  
+});
+
 app.get('/products', function (req, res) {
-  res.sendFile('hi am swetha');
+  res.sendFile('this is my products');
+  
+});
+
+app.get('/order', function (req, res) {
+  res.sendFile('this is my order');
+  
+});
+
+app.get('/contact', function (req, res) {
+  res.sendFile('this is my contact');
   
 });
 
