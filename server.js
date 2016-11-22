@@ -10,8 +10,8 @@ app.get('products', function (req, res) {
   
 });
 
-app.get('/home', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'home.html'));
+app.get('/index', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
