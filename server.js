@@ -31,6 +31,10 @@ app.get('/contact', function (req, res) {
   
 });
 
+app.get('/submit', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'submit.html'));
+  
+});
 app.get('/ui/index', function (req, res) {
   res.send(path.join(__dirname, 'ui', 'index.html'));
 });
