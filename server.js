@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/page', function (req, res) {
-  res.send('this is my home');
+ res.sendFile(path.join(__dirname, 'ui', 'page.html'));
   
 });
 
