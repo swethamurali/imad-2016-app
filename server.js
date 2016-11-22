@@ -10,8 +10,8 @@ app.get('/', function (req, res) {
   
 });
 
-app.get('/home', function (req, res) {
-  res.sendFile('this is my home');
+app.get('/page', function (req, res) {
+  res.send('this is my home');
   
 });
 
