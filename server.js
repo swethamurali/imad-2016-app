@@ -22,12 +22,12 @@ app.get('/products', function (req, res) {
 });
 
 app.get('/order', function (req, res) {
-  res.send('this is my order');
+  res.sendFile(path.join(__dirname, 'ui', 'order.html'));
   
 });
 
 app.get('/contact', function (req, res) {
-  res.send('this is my contact');
+  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
   
 });
 
