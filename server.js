@@ -10,9 +10,25 @@ app.get('/', function (req, res) {
   
 });
 
-app.get('/ui/products', function (req, res) {
+app.get('/home', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'home.html'));
+});
+
+app.get('/products', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'products.html'));
 });
+
+app.get('/order', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'order.html'));
+});
+
+app.get('/contact', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
+});
+
+
+
+
 
 
 app.get('/ui/style.css', function (req, res) {
