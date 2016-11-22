@@ -16,7 +16,8 @@ app.get('/page', function (req, res) {
 });
 
 app.get('/products', function (req, res) {
-  res.send('this is my products');
+     res.sendFile(path.join(__dirname, 'ui', 'products.html'));
+ 
   
 });
 
