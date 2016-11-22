@@ -1,1 +1,56 @@
+body {
+    
+ font-family: Script MT;
+   
+ background:"http://hddesktopwallpapers.in/wp-content/uploads/2015/06/Plain-Wallpapers-HD-A15.jpg";
+   
+ color:black;
+   
+ margin-top: 5px;
+  
+  font-size:20px;
+   
+
+
+ 
+   
+
+}
+
+
+
+
+
+.center 
+{
+   
+ text-align: center;
+
+font-family:"Trebuchet MS";
+}
+
+
+.text-big 
+{
+    
+font-size: 250%;
+
+}
+
+
+.bold 
+{
+    
+font-weight: bold;
+
+}
+
+
+.img-medium 
+{
+   
+ height: 200px;
+
+}
+
 
