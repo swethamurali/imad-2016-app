@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+app.get('products', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'products.html'));
   
 });
 
@@ -14,9 +14,6 @@ app.get('/home', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'home.html'));
 });
 
-app.get('/products', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'products.html'));
-});
 
 app.get('/order', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'order.html'));
