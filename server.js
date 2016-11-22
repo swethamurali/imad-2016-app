@@ -16,22 +16,22 @@ app.get('/home', function (req, res) {
 });
 
 app.get('/products', function (req, res) {
-  res.sendFile('this is my products');
+  res.send('this is my products');
   
 });
 
 app.get('/order', function (req, res) {
-  res.sendFile('this is my order');
+  res.send('this is my order');
   
 });
 
 app.get('/contact', function (req, res) {
-  res.sendFile('this is my contact');
+  res.send('this is my contact');
   
 });
 
 app.get('/ui/index', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
