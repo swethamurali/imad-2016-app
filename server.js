@@ -5,21 +5,26 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('products', function (req, res) {
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  
+});
+
+app.get('/ui/products', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'products.html'));
   
 });
 
-app.get('/index', function (req, res) {
+app.get('/ui/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
-app.get('/order', function (req, res) {
+app.get('/ui/order', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'order.html'));
 });
 
-app.get('/contact', function (req, res) {
+app.get('/ui/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
