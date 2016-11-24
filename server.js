@@ -30,12 +30,12 @@ app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
   
 });
-app.get('/form', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'form.html'));
-  
-});
 
   
+app.get('/submit', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'submit.html'));
+  
+});
 
 
 
