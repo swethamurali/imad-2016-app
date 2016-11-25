@@ -35,7 +35,7 @@ app.get('/form', function (req, res) {
   
 });
 
-var service_id = 'my_mandrill';
+var service_id = 'my_gmail';
 var template_id = 'feedback';
 var template_params = {
 name: 'John',
