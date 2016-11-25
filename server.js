@@ -30,21 +30,9 @@ app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
   
 });
-app.get('/form', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'form.html'));
-  
-});
 
-var service_id = 'my_gmail';
-var template_id = 'feedback';
-var template_params = {
-name: 'John',
-reply_email: 'swetha1695@gmail.com',
-message: 'This is awesome!'
-};
 
-emailjs.send(service_id,template_id,template_params);
-  
+
 
 
 
